@@ -1,7 +1,7 @@
 # JavaExercises
 training 
 
-* CLASSE * 
+* CLASSE 
 
 O que é uma Classe em Java?
 	É um tipo estruturado que pode conter membros, sendo eles:
@@ -46,7 +46,7 @@ Os atributos de uma classe são os membros que armazenam dados, seja os inserido
 Os métodos de uma classe são os membros responsáveis pelas operações e transformações do sistema.
 
 
-* MEMBROS ESTÁTICOS *
+* MEMBROS ESTÁTICOS
 	- São chamados de 'Membros de Classe', diferenciando-os de 'membros' e 'instâncias';
 	- São membros que fazem sentido independentemente de objetos. ;
 	- Não precisam de nome de objeto para serem chamados;
