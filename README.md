@@ -1,6 +1,8 @@
 # JavaExercises
 training 
 
+* CLASSE * 
+
 O que é uma Classe em Java?
 	É um tipo estruturado que pode conter membros, sendo eles:
 		- Atributos (dados / campos)
@@ -39,3 +41,16 @@ Toda classe Java é uma subclasse (herda) da classe Object, e a classe Object po
 	- equals, que compara se um objeto é igual ao outro;
 	- hashCode, que retorna um código Hash do objeto;
 	- toString, que converte o objeto para String.
+
+Os atributos de uma classe são os membros que armazenam dados, seja os inseridos pelo usuário, sejam os vindos diretamente do sistema;
+Os métodos de uma classe são os membros responsáveis pelas operações e transformações do sistema.
+
+
+* MEMBROS ESTÁTICOS *
+	- São chamados de 'Membros de Classe', diferenciando-os de 'membros' e 'instâncias';
+	- São membros que fazem sentido independentemente de objetos. ;
+	- Não precisam de nome de objeto para serem chamados;
+	- São chamados a partir do próprio nome da classe;
+	- Sâo utilizados de maneira comum em Classes Utilitárias;
+	- Sâo utilizados de maneira comum em Declaração de Constante (constantes são valores que não podem ser alterados dentro do código, e para isso, utilizamos a palavra 'final'. Exemplo: 'public static final int [NOME DA VÁRIAVEL]' - Nomes de Constantes, no padrão, são definidos em letra maiúscula);
+	- Uma Classe que possui somente Membros Estáticos, será, por consequência, uma Classe estática, e essa classe não poderá ser instânciada.
