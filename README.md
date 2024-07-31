@@ -1,7 +1,6 @@
 # JavaExercises
-training 
 
-* CLASSE 
+## CLASSE 
 
 O que é uma Classe em Java?
 	É um tipo estruturado que pode conter membros, sendo eles:
@@ -13,8 +12,6 @@ O que é uma Classe em Java?
 		- Encapsulamento
 		- Herança
 		- Polimorfismo
-
-*Objetos são instâncias de Classes
 
 Para acessarmos uma classe a partir de outro arquivo java, podemos utilizar o 'import' e, se essa classe for pública (public), podemos definir uma váriavel do tipo dessa classe, atribuindo um nome a ela, e chamamamos, a partir desse nome, o construtor da classe, como por exemplo:
 
@@ -42,11 +39,11 @@ Toda classe Java é uma subclasse (herda) da classe Object, e a classe Object po
 	- hashCode, que retorna um código Hash do objeto;
 	- toString, que converte o objeto para String.
 
-Os atributos de uma classe são os membros que armazenam dados, seja os inseridos pelo usuário, sejam os vindos diretamente do sistema;
-Os métodos de uma classe são os membros responsáveis pelas operações e transformações do sistema.
+- Os atributos de uma classe são os membros que armazenam dados, seja os inseridos pelo usuário, sejam os vindos diretamente do sistema;
+- Os métodos de uma classe são os membros responsáveis pelas operações e transformações do sistema;
+- Quando um membro de uma classe é instânciado, ele, por padrão, recebe o valor 0 se for 'int' ou 'double', e 'null' se for String;
 
-
-* MEMBROS ESTÁTICOS
+### MEMBROS ESTÁTICOS
 	- São chamados de 'Membros de Classe', diferenciando-os de 'membros' e 'instâncias';
 	- São membros que fazem sentido independentemente de objetos. ;
 	- Não precisam de nome de objeto para serem chamados;
@@ -54,3 +51,20 @@ Os métodos de uma classe são os membros responsáveis pelas operações e tran
 	- Sâo utilizados de maneira comum em Classes Utilitárias;
 	- Sâo utilizados de maneira comum em Declaração de Constante (constantes são valores que não podem ser alterados dentro do código, e para isso, utilizamos a palavra 'final'. Exemplo: 'public static final int [NOME DA VÁRIAVEL]' - Nomes de Constantes, no padrão, são definidos em letra maiúscula);
 	- Uma Classe que possui somente Membros Estáticos, será, por consequência, uma Classe estática, e essa classe não poderá ser instânciada.
+
+### PALAVRA 'THIS'
+	- É uma referência ao objeto onde ela está sendo declarada;
+	- Diferencia atributos de variáveis (ou parâmetros) locais;
+	- Quando usamos 'this', acessamos a variável do Objeto ao qual ela faz parte. Se não utilizassemos o 'this', acessariamos o parâmetro declarado, seja uma consulta ou um input do usuário (variável local);
+	- Através da Palavra 'this', podemos passar o próprio objeto como argumento na chamada de um método ou construtor;
+
+
+## CONSTRUTORES
+	- O Construtor é uma operação especial da classe, que é executada no momento da instanciação do Objeto (quando chamamos o objeto no código através do comando 'new');
+	- É utilizado para iniciar valores dos atributos ou permitir/obrigar que o objeto receba dados; 
+	- É possível especificar mais de um construtor na mesma classe (o que chamamos de sobrecarga);
+	- O Construtor, por padrão, é declarado após a definição dos atributos (variáveis); 
+	- O Construtor, quando declarado, não faz parte de algum 'tipo', como 'String' ou 'int', por exemplo;
+	- Quando declaramos o Construtor, ele recebe os parâmetros declarados no seu código, dizendo para o sistema o que será inserido ali;
+	- Através dos Construtores, se, nos parâmetros, eu não declarar todas as variáveis a serem preenchidas, posso permitir que o usuário ou o sistema não preencha todos os campos de uma página (Construtor Personalizado);
+	- Podemos, através da SOBRECARGA, definir um construtor padrão e um construtor personalizado;
