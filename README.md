@@ -43,7 +43,7 @@ Toda classe Java é uma subclasse (herda) da classe Object, e a classe Object po
 - Os métodos de uma classe são os membros responsáveis pelas operações e transformações do sistema;
 - Quando um membro de uma classe é instânciado, ele, por padrão, recebe o valor 0 se for 'int' ou 'double', e 'null' se for String;
 
-### MEMBROS ESTÁTICOS
+## MEMBROS ESTÁTICOS
 	- São chamados de 'Membros de Classe', diferenciando-os de 'membros' e 'instâncias';
 	- São membros que fazem sentido independentemente de objetos. ;
 	- Não precisam de nome de objeto para serem chamados;
@@ -52,7 +52,7 @@ Toda classe Java é uma subclasse (herda) da classe Object, e a classe Object po
 	- Sâo utilizados de maneira comum em Declaração de Constante (constantes são valores que não podem ser alterados dentro do código, e para isso, utilizamos a palavra 'final'. Exemplo: 'public static final int [NOME DA VÁRIAVEL]' - Nomes de Constantes, no padrão, são definidos em letra maiúscula);
 	- Uma Classe que possui somente Membros Estáticos, será, por consequência, uma Classe estática, e essa classe não poderá ser instânciada.
 
-### PALAVRA 'THIS'
+## PALAVRA 'THIS'
 	- É uma referência ao objeto onde ela está sendo declarada;
 	- Diferencia atributos de variáveis (ou parâmetros) locais;
 	- Quando usamos 'this', acessamos a variável do Objeto ao qual ela faz parte. Se não utilizassemos o 'this', acessariamos o parâmetro declarado, seja uma consulta ou um input do usuário (variável local);
@@ -68,3 +68,9 @@ Toda classe Java é uma subclasse (herda) da classe Object, e a classe Object po
 	- Quando declaramos o Construtor, ele recebe os parâmetros declarados no seu código, dizendo para o sistema o que será inserido ali;
 	- Através dos Construtores, se, nos parâmetros, eu não declarar todas as variáveis a serem preenchidas, posso permitir que o usuário ou o sistema não preencha todos os campos de uma página (Construtor Personalizado);
 	- Podemos, através da SOBRECARGA, definir um construtor padrão e um construtor personalizado;
+	
+## ENCAPSULAMENTO
+	> Encapsulamento é o princípio que consiste em esconder detalhes de implementação de uma classe, expondo apenas operações seguras e que mantenham os objetos em um estado consistente;
+	- Seguindo o padrão do JavaBeans, os atributos devem ser acessados por meio de métodos 'get' e 'set', pois usamos o modificador de acesso 'private' ao invés do 'public';
+	- Utilizamos a regra acima da seguinte forma: 'get' ou 'set' + o nome do atributo com a inicial maiúscula (camelCase).
+	- Por padrão, o método de encapsulamento é declarado após a declaração dos Construtores;
