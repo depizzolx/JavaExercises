@@ -69,8 +69,15 @@ Toda classe Java é uma subclasse (herda) da classe Object, e a classe Object po
 	- Através dos Construtores, se, nos parâmetros, eu não declarar todas as variáveis a serem preenchidas, posso permitir que o usuário ou o sistema não preencha todos os campos de uma página (Construtor Personalizado);
 	- Podemos, através da SOBRECARGA, definir um construtor padrão e um construtor personalizado;
 	
+## MODIFICADORES DE ACESSO
+	- public: O membro pode ser acessado por todas as classes, ao menos se, em um módulo diferente, o pacote onde ele reside não seja exportado;
+	- private: O membro só pode ser acessado na própria classe;
+	- (nada): O membro só pode ser acessado nas classes do mesmo pacote (package)
+	- protected: O membro só pode ser acessado em classes do mesmo pacote, bem como em subclasses de pacotes diferentes;
+	
 ## ENCAPSULAMENTO
 	> Encapsulamento é o princípio que consiste em esconder detalhes de implementação de uma classe, expondo apenas operações seguras e que mantenham os objetos em um estado consistente;
 	- Seguindo o padrão do JavaBeans, os atributos devem ser acessados por meio de métodos 'get' e 'set', pois usamos o modificador de acesso 'private' ao invés do 'public';
 	- Utilizamos a regra acima da seguinte forma: 'get' ou 'set' + o nome do atributo com a inicial maiúscula (camelCase).
 	- Por padrão, o método de encapsulamento é declarado após a declaração dos Construtores;
+	- Por utilizarmos o modificador de acesso 'private', podemos proteger um atributo de mudanças indesejadas através da não-declaração do método 'set';
