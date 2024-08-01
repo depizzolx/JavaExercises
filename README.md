@@ -12,6 +12,7 @@ O que é uma Classe em Java?
 		- Encapsulamento
 		- Herança
 		- Polimorfismo
+	
 
 Para acessarmos uma classe a partir de outro arquivo java, podemos utilizar o 'import' e, se essa classe for pública (public), podemos definir uma váriavel do tipo dessa classe, atribuindo um nome a ela, e chamamamos, a partir desse nome, o construtor da classe, como por exemplo:
 
@@ -81,3 +82,25 @@ Toda classe Java é uma subclasse (herda) da classe Object, e a classe Object po
 	- Utilizamos a regra acima da seguinte forma: 'get' ou 'set' + o nome do atributo com a inicial maiúscula (camelCase).
 	- Por padrão, o método de encapsulamento é declarado após a declaração dos Construtores;
 	- Por utilizarmos o modificador de acesso 'private', podemos proteger um atributo de mudanças indesejadas através da não-declaração do método 'set';
+
+## tipos REFERÊNCIA 
+	- Classe são Tipos Referência, ou seja, toda variável que cujo tipo são classes, não CONTÉM um valor, mas sim APONTA pra um valor. Ou seja, na memória, o valor referido na variável é buscado em outro local, e não está contido na própria variável do tipo classe. A variável refere-se a um valor, mas não o possui (PONTEIRO);
+	- A alocação de uma variável na memória para ser referida é feita através do 'new', ou seja, para utilizarmos, é preciso instanciar a classe. Exemplo abaixo;
+	
+	Product p1, p2;
+	
+	p1 = new Product ("TV", 900.00, 0);
+	p2 = p1.
+	
+	- No exemplo acima, p1 criou um objeto na memória e está apontando pra ele, e, da mesma forma, p2 aponta para esse objeto criado, mas não o recebe, é apenas uma referência;
+	- Ou seja, quando eu crio uma variável do tipo referência, eu posso usar os "tipos primitivos" criados dentro dela, ou seja, seus métodos e atributos, pois é como se fossem uma nova tipagem para o Java, me permitindo trabalhar com diferentes tipos;
+
+## tipos VALOR	
+	- Tipos Primitivos são do tipo valor, ou seja, armazenam/possuem o valor, e não apontam pra ele (CAIXA). Exemplo abaixo;
+	
+	double x, y;
+	
+	x = 10;
+	y = x;
+	
+	- No exemplo acima, y cria uma cópia de x e possui o valor copiado, da mesma forma que x possui o valor atribuído a ele, ou seja, 10.
