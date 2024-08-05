@@ -104,3 +104,12 @@ Toda classe Java é uma subclasse (herda) da classe Object, e a classe Object po
 	y = x;
 	
 	- No exemplo acima, y cria uma cópia de x e possui o valor copiado, da mesma forma que x possui o valor atribuído a ele, ou seja, 10.
+	
+## VETORES
+	- Vetor é o nome dado a arranjos unidimensionais;
+	- Um arranjo é nada mais que um Array, que é uma estrutura de dados;
+	- O Array é homogêneo, ou seja, só possui dados do mesmo tipo;
+	- É ordenado, ou seja, os elementos são acessados por meio de posições (IDs);
+	- A vantagem do Array é o acesso imediato aos elementos através da sua posição;
+	- A desvantagem é que os Arrays possuem um tamanho fixo, ex: Se eu quero um Array de 100 posições, já tenho que criá-lo previamente dessa forma;
+	- Outra desvantagem é a dificuldade de fazer inserções e exclusões;
